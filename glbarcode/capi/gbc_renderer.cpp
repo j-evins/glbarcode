@@ -1,6 +1,6 @@
 /*  gbc_renderer.cpp
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -18,14 +18,13 @@
  *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #include "gbc_renderer.h"
 
-#include <glbarcode/Renderer.h>
-
+#include <glbarcode/Renderer.hpp>
 
 
 using namespace glbarcode;
-
 
 
 void gbc_renderer_delete( gbcRenderer *renderer )

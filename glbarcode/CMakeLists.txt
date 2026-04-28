@@ -1,33 +1,34 @@
 set (PUBLIC_HEADERS
-  Factory.h
-  Barcode.h
-  Barcode1dBase.h
-  Barcode2dBase.h
-  BarcodeCepnet.h
-  BarcodeCode39Ext.h
-  BarcodeCode39.h
-  BarcodeDataMatrix.h
-  BarcodeEan13.h
-  BarcodeOnecode.h
-  BarcodePostnet11.h
-  BarcodePostnet5.h
-  BarcodePostnet9.h
-  BarcodePostnet.h
-  BarcodeUpcA.h
-  BarcodeUpcBase.h
-  BarcodeQrcode.h
-  Constants.h
-  Matrix.h
-  Renderer.h
-  RendererSvg.h
-  RendererEps.h
-  RendererDebug.h
-  TypeIdList.h
-  ${CMAKE_CURRENT_BINARY_DIR}/Version.h
+  Factory.hpp
+  Barcode.hpp
+  Barcode1dBase.hpp
+  Barcode2dBase.hpp
+  BarcodeCepnet.hpp
+  BarcodeCode39Ext.hpp
+  BarcodeCode39.hpp
+  BarcodeDataMatrix.hpp
+  BarcodeEan13.hpp
+  BarcodeOnecode.hpp
+  BarcodePostnet11.hpp
+  BarcodePostnet5.hpp
+  BarcodePostnet9.hpp
+  BarcodePostnet.hpp
+  BarcodeUpcA.hpp
+  BarcodeUpcBase.hpp
+  BarcodeQrcode.hpp
+  Constants.hpp
+  Matrix.hpp
+  Renderer.hpp
+  QtRenderer.hpp
+  RendererSvg.hpp
+  RendererEps.hpp
+  RendererDebug.hpp
+  TypeIdList.hpp
+  ${CMAKE_CURRENT_BINARY_DIR}/Version.hpp
 )
 
 set (PRIVATE_HEADERS
-  DrawingPrimitives.h
+  DrawingPrimitives.hpp
 )
 
 set (LIB_SOURCES
@@ -50,26 +51,35 @@ set (LIB_SOURCES
   BarcodeQrcode.cpp
   DrawingPrimitives.cpp
   Renderer.cpp
+  QtRenderer.cpp
   RendererSvg.cpp
   RendererEps.cpp
   RendererDebug.cpp
-)
-
-include_directories (
-  ${CMAKE_CURRENT_BINARY_DIR}
-  ${LIBQRENCODE_INCLUDE_DIR}
 )
 
 add_library (${Lib_Name} SHARED
   ${LIB_SOURCES}
 )
 
+target_compile_features (${Lib_Name}
+  PUBLIC cxx_std_20
+)
+
+target_include_directories (${Lib_Name}
+  PUBLIC
+    ..
+  PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}/..
+)
+
 target_link_libraries (${Lib_Name}
-  ${LIBQRENCODE_LIBRARIES}
+  PRIVATE
+    ${OPTIONAL_QRENCODE}
+    ${OPTIONAL_QT}
 )
 
 
-configure_file (Version.h.in ${CMAKE_CURRENT_BINARY_DIR}/Version.h @ONLY)
+configure_file (Version.hpp.in ${CMAKE_CURRENT_BINARY_DIR}/Version.hpp @ONLY)
 configure_file (${Unique_Package_Name}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${Unique_Package_Name}.pc @ONLY)
 
 

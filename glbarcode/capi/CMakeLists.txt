@@ -26,6 +26,21 @@ add_library (${CAPI_Lib_Name} SHARED
   ${LIB_SOURCES}
 )
 
+target_include_directories (${CAPI_Lib_Name}
+  PUBLIC
+    ..
+  PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}/..
+)
+
+target_link_libraries (${CAPI_Lib_Name}
+  PRIVATE
+    ${Lib_Name}
+    ${OPTIONAL_QRENCODE}
+    ${OPTIONAL_QT}
+)
+
+
 configure_file (gbc_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/gbc_version.h @ONLY)
 configure_file (${Unique_CAPI_Package_Name}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc @ONLY)
 

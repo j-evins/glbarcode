@@ -1,8 +1,8 @@
 /*  MyBarcode.cpp */
 
-#include "MyBarcode.h"
+#include "MyBarcode.hpp"
 
-#include "glbarcode/Constants.h"
+#include "glbarcode/Constants.hpp"
 
 #include <cctype>
 #include <algorithm>

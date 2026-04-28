@@ -1,11 +1,11 @@
-cmake_minimum_required (VERSION 2.8.12)
+cmake_minimum_required (VERSION 3.22)
 
 project (glbarcodepp)
 
 
 set (Package_Name "glbarcode++")
 set (Short_Name   "gbc")
-set (Package_URL  "https://github.com/jimevins/glbarcode")
+set (Package_URL  "https://github.com/j-evins/glbarcode")
 
 set (API_Version     "0")
 set (Feature_Version "0")
@@ -35,14 +35,25 @@ set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/"
 #
 # Optional dependency on qrencode library
 #
-find_package (LibQrencode)
+find_package (LibQrencode 3.4 QUIET)
 if (${LIBQRENCODE_FOUND})
   add_definitions (-DHAVE_QRENCODE=1)
-  set (Lib_Requires "libqrencode")
+  set (OPTIONAL_QRENCODE "QRENCODE::QRENCODE")
 else (${LIBQRENCODE_FOUND})
-  set (LIBQRENCODE_INCLUDE_DIR "")
-  set (LIBQRENCODE_LIBRARIES "")
+  set (OPTIONAL_QRENCODE "")
 endif (${LIBQRENCODE_FOUND})
+
+
+#
+# Optional dependency on qt
+#
+find_package (Qt6 6.2 COMPONENTS Core Gui QUIET)
+if (${Qt6_FOUND})
+  add_definitions (-DHAVE_QT=1)
+  set (OPTIONAL_QT "Qt6::Gui")
+else (${Qt6_FOUND})
+  set (OPTIONAL_QT "")
+endif (${Qt6_FOUND})
 
 #
 # Subdirectories

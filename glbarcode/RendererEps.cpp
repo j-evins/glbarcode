@@ -1,31 +1,30 @@
-/*  RendererEps.cpp
- *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
- *
- *  This file is part of glbarcode++.
- *
- *  glbarcode++ is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU Lesser General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  glbarcode++ is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU Lesser General Public License for more details.
- *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
- */
+//  RendererEps.cpp
+//
+//  Copyright (C) 2013-2026  Jaye Evins <evins@snaught.com>
+//
+//  This file is part of glbarcode++.
+//
+//  glbarcode++ is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU Lesser General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  glbarcode++ is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU Lesser General Public License for more details.
+//
+//  You should have received a copy of the GNU Lesser General Public License
+//  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
+//
 
-#include "RendererEps.h"
 
-#include "Version.h"
+#include "RendererEps.hpp"
+
+#include "glbarcode/Version.hpp"
 
 #include <cstdio>
 
-
-using namespace glbarcode::Version;
 
 namespace glbarcode
 {
@@ -91,6 +90,8 @@ namespace glbarcode
 
 	void RendererEps::drawBegin( double w, double h )
 	{
+                using namespace glbarcode::Version;
+
 		if ( d->filename.empty() || ( d->filename == "-" ) )
 		{
 			d->fp = stdout;
@@ -139,7 +140,7 @@ namespace glbarcode
 	}
 
 
-	void RendererEps::drawText( double x, double y, double size, const std::string& text )
+	void RendererEps::drawText( double x, double y, double size, const std::string& text, HAlign halign )
 	{
 		fprintf( d->fp, "gsave\n" );
 		fprintf( d->fp, "%f %f translate\n", x, y );

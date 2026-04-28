@@ -1,6 +1,6 @@
 /*  gbc_renderer_svg.cpp
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -18,9 +18,10 @@
  *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #include "gbc_renderer_svg.h"
 
-#include <glbarcode/RendererSvg.h>
+#include <glbarcode/RendererSvg.hpp>
 
 
 

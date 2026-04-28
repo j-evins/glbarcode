@@ -1,10 +1,10 @@
-/*  MyBarcode.h */
+/*  MyBarcode.hpp */
 
-#ifndef _MyBarcode_h_
-#define _MyBarcode_h_
+#ifndef _MyBarcode_hpp_
+#define _MyBarcode_hpp_
 
 
-#include "glbarcode/Barcode1dBase.h"
+#include "glbarcode/Barcode1dBase.hpp"
 
 
 class MyBarcode : public glbarcode::Barcode1dBase
@@ -28,4 +28,4 @@ private:
 };
 
 
-#endif /* _MyBarcode_h_ */
+#endif /* _MyBarcode_hpp_ */

@@ -11,12 +11,12 @@ Documentation
 -------------
 
 A copy of the doxygen generated manual for glbarcode++ can be found
-[here](http://jimevins.github.io/glbarcode).
+[here](http://j-evins.github.io/glbarcode).
 
 
 Download
 --------
-[Latest release](https://github.com/jimevins/glbarcode/releases/latest).
+[Latest release](https://github.com/j-evins/glbarcode/releases/latest).
 
 
 Building
@@ -35,7 +35,7 @@ and install:
 glbarcode++ License
 -------------------
 
-Copyright &copy; 2013 Jim Evins <evins@snaught.com>
+Copyright &copy; 2013 Jaye Evins <evins@snaught.com>
 
 glbarcode++ is free software: you can redistribute it and/or modify
 it under the terms of the
