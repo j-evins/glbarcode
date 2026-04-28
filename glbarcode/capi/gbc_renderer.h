@@ -33,16 +33,16 @@ extern "C" {
 #endif
 
 
-	/**
-	 * CAPI Base class for all renderers.
-	 */
-	typedef struct gbcRenderer gbcRenderer;
+        /**
+         * CAPI Base class for all renderers.
+         */
+        typedef struct gbcRenderer gbcRenderer;
 
 
-	/**
-	 * Delete gbcRenderer object.
-	 */
-	void gbc_renderer_delete( gbcRenderer *bc );
+        /**
+         * Delete gbcRenderer object.
+         */
+        void gbc_renderer_delete( gbcRenderer *bc );
 
 
 

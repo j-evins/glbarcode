@@ -36,35 +36,35 @@ extern "C" {
 #endif
 
 
-	/**
-	 * CAPI stand-in for glbarcode::RendererEps.
-	 */
-	typedef struct gbcRenderer gbcRendererEps;
+        /**
+         * CAPI stand-in for glbarcode::RendererEps.
+         */
+        typedef struct gbcRenderer gbcRendererEps;
 
 
-	/**
-	 * New RendererEps object.
-	 */
-	gbcRendererEps* gbc_renderer_eps_new( void );
+        /**
+         * New RendererEps object.
+         */
+        gbcRendererEps* gbc_renderer_eps_new( void );
 
 
-	/**
-	 * Set accessor for "filename" parameter.
-	 *
-	 * @param renderer EPS renderer
-	 * @param value Filename
-	 */
-	void gbc_renderer_eps_set_filename( gbcRendererEps *renderer, char *value );
+        /**
+         * Set accessor for "filename" parameter.
+         *
+         * @param renderer EPS renderer
+         * @param value Filename
+         */
+        void gbc_renderer_eps_set_filename( gbcRendererEps *renderer, char *value );
 
 
-	/**
-	 * Get accessor for "filename" parameter.
-	 *
-	 * @param renderer EPS renderer
-	 *
-	 * @returns Value of boolean "filename" parameter
-	 */
-	const char *gbc_renderer_eps_get_filename( gbcRendererEps *renderer );
+        /**
+         * Get accessor for "filename" parameter.
+         *
+         * @param renderer EPS renderer
+         *
+         * @returns Value of boolean "filename" parameter
+         */
+        const char *gbc_renderer_eps_get_filename( gbcRendererEps *renderer );
 
 
 

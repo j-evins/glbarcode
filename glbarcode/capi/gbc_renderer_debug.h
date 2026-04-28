@@ -36,16 +36,16 @@ extern "C" {
 #endif
 
 
-	/**
-	 * CAPI stand-in for glbarcode::RendererDebug.
-	 */
-	typedef struct gbcRenderer gbcRendererDebug;
+        /**
+         * CAPI stand-in for glbarcode::RendererDebug.
+         */
+        typedef struct gbcRenderer gbcRendererDebug;
 
 
-	/**
-	 * New RendererDebug object.
-	 */
-	gbcRendererDebug* gbc_renderer_debug_new( void );
+        /**
+         * New RendererDebug object.
+         */
+        gbcRendererDebug* gbc_renderer_debug_new( void );
 
 
 

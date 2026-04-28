@@ -29,7 +29,7 @@ using namespace glbarcode;
 
 void gbc_renderer_delete( gbcRenderer *renderer )
 {
-	delete static_cast<Renderer*>(renderer);
+        delete static_cast<Renderer*>(renderer);
 }
 
 

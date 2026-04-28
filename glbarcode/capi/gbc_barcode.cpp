@@ -30,72 +30,72 @@ using namespace glbarcode;
 
 void gbc_barcode_delete( gbcBarcode *bc )
 {
-	delete static_cast<Barcode*>(bc);
+        delete static_cast<Barcode*>(bc);
 }
 
 
 void gbc_barcode_set_show_text( gbcBarcode *bc, bool value )
 {
-	static_cast<Barcode*>(bc)->setShowText( value );
+        static_cast<Barcode*>(bc)->setShowText( value );
 }
 
 
 bool gbc_barcode_get_show_text( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->showText();
+        return static_cast<Barcode*>(bc)->showText();
 }
 
 
 void gbc_barcode_set_checksum( gbcBarcode *bc, bool value )
 {
-	static_cast<Barcode*>(bc)->setChecksum( value );
+        static_cast<Barcode*>(bc)->setChecksum( value );
 }
 
 
 bool gbc_barcode_get_checksum( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->checksum();
+        return static_cast<Barcode*>(bc)->checksum();
 }
 
 
 void gbc_barcode_build( gbcBarcode *bc,
-			char       *data,
-			double      w,
-			double      h)
+                        char       *data,
+                        double      w,
+                        double      h)
 {
-	static_cast<Barcode*>(bc)->build( data, w, h );
+        static_cast<Barcode*>(bc)->build( data, w, h );
 }
 
 
 
 void gbc_barcode_render( gbcBarcode  *bc,
-			 gbcRenderer *renderer )
+                         gbcRenderer *renderer )
 {
-	static_cast<Barcode*>(bc)->render( *static_cast<Renderer*>(renderer) );
+        static_cast<Barcode*>(bc)->render( *static_cast<Renderer*>(renderer) );
 }
 
 
 bool gbc_barcode_is_empty( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->isEmpty();
+        return static_cast<Barcode*>(bc)->isEmpty();
 }
 
 
 bool gbc_barcode_is_data_valid( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->isDataValid();
+        return static_cast<Barcode*>(bc)->isDataValid();
 }
 
 
 double gbc_barcode_get_width( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->width();
+        return static_cast<Barcode*>(bc)->width();
 }
 
 
 double gbc_barcode_get_height( gbcBarcode *bc )
 {
-	return static_cast<Barcode*>(bc)->height();
+        return static_cast<Barcode*>(bc)->height();
 }
 
 

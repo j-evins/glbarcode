@@ -28,20 +28,20 @@
 
 int main( int argc, char **argv )
 {
-	glbarcode::RendererDebug renderer;
+        glbarcode::RendererDebug renderer;
 
-	if ( argc != 2 )
-	{
-		std::cerr << "Usage: " << argv[0] << "data";
-	}
+        if ( argc != 2 )
+        {
+                std::cerr << "Usage: " << argv[0] << "data";
+        }
 
-	glbarcode::Factory::init();
+        glbarcode::Factory::init();
 
-	glbarcode::Barcode* bc = glbarcode::Factory::createBarcode( "code39" );
+        glbarcode::Barcode* bc = glbarcode::Factory::createBarcode( "code39" );
 
-	bc->build( argv[1] );
+        bc->build( argv[1] );
 
-	bc->render( renderer );
+        bc->render( renderer );
 
-	delete bc;
+        delete bc;
 }

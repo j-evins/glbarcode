@@ -36,44 +36,44 @@ extern "C" {
 #endif
 
 
-	/**
-	 * Initialize barcode factory.
-	 */
-	void gbc_factory_init( void );
+        /**
+         * Initialize barcode factory.
+         */
+        void gbc_factory_init( void );
 
 
-	/**
-	 * Create barcode based on type ID string.
-	 *
-	 * @param type_id Barcode type ID string
-	 *
-	 * @return Pointer to newly allocated barcode object
-	 */
-	gbcBarcode *gbc_factory_create_barcode(	char *type_id );
+        /**
+         * Create barcode based on type ID string.
+         *
+         * @param type_id Barcode type ID string
+         *
+         * @return Pointer to newly allocated barcode object
+         */
+        gbcBarcode *gbc_factory_create_barcode(        char *type_id );
 
 
-	/**
-	 * Is barcode type supported?
-	 *
-	 * @param type_id Barcode type ID string
-	 */
-	bool gbc_factory_is_type_supported( char *type_id );
+        /**
+         * Is barcode type supported?
+         *
+         * @param type_id Barcode type ID string
+         */
+        bool gbc_factory_is_type_supported( char *type_id );
 
 
-	/**
-	 * Get list of supported types.
-	 *
-	 * @return Newly allocated list of type ID strings. Terminated by NULL.
-	 */
-	char ** gbc_factory_get_supported_types( void );
+        /**
+         * Get list of supported types.
+         *
+         * @return Newly allocated list of type ID strings. Terminated by NULL.
+         */
+        char ** gbc_factory_get_supported_types( void );
 
 
-	/**
-	 * Free previously allocated list of suppoted types.
-	 *
-	 * @param list List of type ID strings. Created by gbc_factory_get_supported_types().
-	 */
-	void gbc_factory_free_supported_types( char **list );
+        /**
+         * Free previously allocated list of suppoted types.
+         *
+         * @param list List of type ID strings. Created by gbc_factory_get_supported_types().
+         */
+        void gbc_factory_free_supported_types( char **list );
 
 
 

@@ -30,58 +30,58 @@
 namespace glbarcode
 {
 
-	/**
-	 * @class RendererDebug RendererDebug.h glbarcode/RendererDebug.h
-	 *
-	 * Simple text renderer for debug and testing.
-	 */
-	class RendererDebug : public Renderer
-	{
+        /**
+         * @class RendererDebug RendererDebug.h glbarcode/RendererDebug.h
+         *
+         * Simple text renderer for debug and testing.
+         */
+        class RendererDebug : public Renderer
+        {
 
-	private:
+        private:
 
-		void drawBegin( double w, double h ) override
-		{
-			printf( "DRAW_BEGIN( w = %f, h = %f )\n", w, h );
-		}
-
-
-		void drawEnd( void ) override
-		{
-			printf( "DRAW_END()\n\n" );
-		}
+                void drawBegin( double w, double h ) override
+                {
+                        printf( "DRAW_BEGIN( w = %f, h = %f )\n", w, h );
+                }
 
 
-		void drawLine( double x, double y, double w, double h ) override
-		{
-			printf( "\tDRAW_LINE( x = %f, y = %f, w = %f, h = %f )\n", x, y, w, h );
-		}
+                void drawEnd( void ) override
+                {
+                        printf( "DRAW_END()\n\n" );
+                }
 
 
-		void drawBox( double x, double y, double w, double h ) override
-		{
-			printf( "\tDRAW_BOX( x = %f, y = %f, w = %f, h = %f )\n", x, y, w, h );
-		}
+                void drawLine( double x, double y, double w, double h ) override
+                {
+                        printf( "\tDRAW_LINE( x = %f, y = %f, w = %f, h = %f )\n", x, y, w, h );
+                }
 
 
-		void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override
-		{
-			printf( "\tDRAW_TEXT( x = %f, y = %f, size = %f, text = \"%s\" )\n", x, y, size, text.c_str() );
-		}
+                void drawBox( double x, double y, double w, double h ) override
+                {
+                        printf( "\tDRAW_BOX( x = %f, y = %f, w = %f, h = %f )\n", x, y, w, h );
+                }
 
 
-		void drawRing( double x, double y, double r, double w ) override
-		{
-			printf( "\tDRAW_RING( x = %f, y = %f, r = %f, w = %f )\n", x, y, r, w );
-		}
+                void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override
+                {
+                        printf( "\tDRAW_TEXT( x = %f, y = %f, size = %f, text = \"%s\" )\n", x, y, size, text.c_str() );
+                }
 
 
-		void drawHexagon( double x, double y, double h ) override
-		{
-			printf( "\tDRAW_HEXAGON( x = %f, y = %f, h = %f )\n", x, y, h );
-		}
+                void drawRing( double x, double y, double r, double w ) override
+                {
+                        printf( "\tDRAW_RING( x = %f, y = %f, r = %f, w = %f )\n", x, y, r, w );
+                }
 
-	};
+
+                void drawHexagon( double x, double y, double h ) override
+                {
+                        printf( "\tDRAW_HEXAGON( x = %f, y = %f, h = %f )\n", x, y, h );
+                }
+
+        };
 
 }
 

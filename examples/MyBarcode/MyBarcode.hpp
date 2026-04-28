@@ -10,21 +10,21 @@
 class MyBarcode : public glbarcode::Barcode1dBase
 {
 public:
-	static glbarcode::Barcode* create( void );
+        static glbarcode::Barcode* create( void );
 
 
 private:
-	bool validate( const std::string& rawData );
+        bool validate( const std::string& rawData );
 
-	std::string encode( const std::string& cookedData );
+        std::string encode( const std::string& cookedData );
 
-	std::string prepareText( const std::string& rawData );
+        std::string prepareText( const std::string& rawData );
 
-	void vectorize( const std::string& codedData,
-	                const std::string& displayText,
-	                const std::string& cookedData,
-	                double&            w,
-	                double&            h );
+        void vectorize( const std::string& codedData,
+                        const std::string& displayText,
+                        const std::string& cookedData,
+                        double&            w,
+                        double&            h );
 };
 
 

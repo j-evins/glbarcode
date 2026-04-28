@@ -28,85 +28,85 @@
 namespace glbarcode
 {
 
-	/**
-	 * @class RendererEps RendererEps.h glbarcode/RendererEps.h
-	 *
-	 * Simple EPS Renderer.
-	 *
-	 * Renders Scalable Vector Graphics format to stdout.
-	 */
-	class RendererEps : public Renderer
-	{
-	public:
-		/**
-		 * Default Constructor (output goes to stdout).
-		 */
-		RendererEps();
+        /**
+         * @class RendererEps RendererEps.h glbarcode/RendererEps.h
+         *
+         * Simple EPS Renderer.
+         *
+         * Renders Scalable Vector Graphics format to stdout.
+         */
+        class RendererEps : public Renderer
+        {
+        public:
+                /**
+                 * Default Constructor (output goes to stdout).
+                 */
+                RendererEps();
 
 
-		/**
-		 * Constructor with output filename
-		 */
-		RendererEps( const std::string& filename );
+                /**
+                 * Constructor with output filename
+                 */
+                RendererEps( const std::string& filename );
 
 
-		/**
-		 * Copy Constructor
-		 */
-		RendererEps( const RendererEps& from );
+                /**
+                 * Copy Constructor
+                 */
+                RendererEps( const RendererEps& from );
 
 
-		/**
-		 * Destructor
-		 */
-		virtual ~RendererEps();
+                /**
+                 * Destructor
+                 */
+                virtual ~RendererEps();
 
 
-		/** Assignment operator.
-		 *
-		 * @param[in] from The value to assign to this object.
-		 *
-		 * @return A reference to this object.
-		 */
-		RendererEps& operator=( const RendererEps& from );
+                /** Assignment operator.
+                 *
+                 * @param[in] from The value to assign to this object.
+                 *
+                 * @return A reference to this object.
+                 */
+                RendererEps& operator=( const RendererEps& from );
 
 
-		/** Get "filename" parameter
-		 *
-		 * @returns filename parameter
-		 */
-		std::string filename( void ) const;
+                /** Get "filename" parameter
+                 *
+                 * @returns filename parameter
+                 */
+                std::string filename( void ) const;
 
 
-		/** Set "filename" parameter
-		 *
-		 * @param[in] filename new value of the output filename
-		 *
-		 * @returns reference to this RendererEps object for parameter chaining
-		 */
-		RendererEps& setFilename( const std::string& filename );
+                /** Set "filename" parameter
+                 *
+                 * @param[in] filename new value of the output filename
+                 *
+                 * @returns reference to this RendererEps object for parameter chaining
+                 */
+                RendererEps& setFilename( const std::string& filename );
 
 
-	private:
-		/*
-		 * Virtual methods implemented by EPS renderer.
-		 */
-		void drawBegin( double w, double h ) override;
-		void drawEnd( void ) override;
-		void drawLine( double x, double y, double w, double h ) override;
-		void drawBox( double x, double y, double w, double h );
-		void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override;
-		void drawRing( double x, double y, double r, double w ) override;
-		void drawHexagon( double x, double y, double h ) override;
+        private:
+                /*
+                 * Virtual methods implemented by EPS renderer.
+                 */
+                void drawBegin( double w, double h ) override;
+                void drawEnd( void ) override;
+                void drawLine( double x, double y, double w, double h ) override;
+                void drawBox( double x, double y, double w, double h );
+                void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override;
+                void drawRing( double x, double y, double r, double w ) override;
+                void drawHexagon( double x, double y, double h ) override;
 
 
-	private:
-		/**
-		 * Private data for EPS Renderer
-		 */
-		struct PrivateData;
-		PrivateData *d;
-	};
+        private:
+                /**
+                 * Private data for EPS Renderer
+                 */
+                struct PrivateData;
+                PrivateData *d;
+        };
 
 }
 

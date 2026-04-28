@@ -31,6 +31,6 @@ using namespace glbarcode;
 
 gbcRendererDebug *gbc_renderer_debug_new( void )
 {
-	return new RendererDebug();
+        return new RendererDebug();
 }
 

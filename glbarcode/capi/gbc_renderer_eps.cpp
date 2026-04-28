@@ -31,19 +31,19 @@ using namespace glbarcode;
 
 gbcRendererEps *gbc_renderer_eps_new( void )
 {
-	return new RendererEps();
+        return new RendererEps();
 }
 
 
 void gbc_renderer_eps_set_filename( gbcRendererEps *renderer, char *value )
 {
-	static_cast<RendererEps*>(renderer)->setFilename( value );
+        static_cast<RendererEps*>(renderer)->setFilename( value );
 }
 
 
 const char *gbc_renderer_eps_get_filename( gbcRendererEps *renderer )
 {
-	return static_cast<RendererEps*>(renderer)->filename().c_str();
+        return static_cast<RendererEps*>(renderer)->filename().c_str();
 }
 
 

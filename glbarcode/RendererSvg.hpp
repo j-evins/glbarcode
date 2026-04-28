@@ -28,85 +28,85 @@
 namespace glbarcode
 {
 
-	/**
-	 * @class RendererSvg RendererSvg.h glbarcode/RendererSvg.h
-	 *
-	 * Simple SVG Renderer.
-	 *
-	 * Renders Scalable Vector Graphics format to stdout.
-	 */
-	class RendererSvg : public Renderer
-	{
-	public:
-		/**
-		 * Default Constructor (output goes to stdout).
-		 */
-		RendererSvg();
+        /**
+         * @class RendererSvg RendererSvg.h glbarcode/RendererSvg.h
+         *
+         * Simple SVG Renderer.
+         *
+         * Renders Scalable Vector Graphics format to stdout.
+         */
+        class RendererSvg : public Renderer
+        {
+        public:
+                /**
+                 * Default Constructor (output goes to stdout).
+                 */
+                RendererSvg();
 
 
-		/**
-		 * Constructor with output filename
-		 */
-		RendererSvg( const std::string& filename );
+                /**
+                 * Constructor with output filename
+                 */
+                RendererSvg( const std::string& filename );
 
 
-		/**
-		 * Copy Constructor
-		 */
-		RendererSvg( const RendererSvg& from );
+                /**
+                 * Copy Constructor
+                 */
+                RendererSvg( const RendererSvg& from );
 
 
-		/**
-		 * Destructor
-		 */
-		virtual ~RendererSvg();
+                /**
+                 * Destructor
+                 */
+                virtual ~RendererSvg();
 
 
-		/** Assignment operator.
-		 *
-		 * @param[in] from The value to assign to this object.
-		 *
-		 * @return A reference to this object.
-		 */
-		RendererSvg& operator=( const RendererSvg& from );
+                /** Assignment operator.
+                 *
+                 * @param[in] from The value to assign to this object.
+                 *
+                 * @return A reference to this object.
+                 */
+                RendererSvg& operator=( const RendererSvg& from );
 
 
-		/** Get "filename" parameter
-		 *
-		 * @returns filename parameter
-		 */
-		std::string filename( void ) const;
+                /** Get "filename" parameter
+                 *
+                 * @returns filename parameter
+                 */
+                std::string filename( void ) const;
 
 
-		/** Set "filename" parameter
-		 *
-		 * @param[in] filename new value of the output filename
-		 *
-		 * @returns reference to this RendererSvg object for parameter chaining
-		 */
-		RendererSvg& setFilename( const std::string& filename );
+                /** Set "filename" parameter
+                 *
+                 * @param[in] filename new value of the output filename
+                 *
+                 * @returns reference to this RendererSvg object for parameter chaining
+                 */
+                RendererSvg& setFilename( const std::string& filename );
 
 
-	private:
-		/*
-		 * Virtual methods implemented by SVG renderer.
-		 */
-		void drawBegin( double w, double h ) override;;
-		void drawEnd( void ) override;;
-		void drawLine( double x, double y, double w, double h ) override;;
-		void drawBox( double x, double y, double w, double h ) override;;
-		void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override;;
-		void drawRing( double x, double y, double r, double w ) override;;
-		void drawHexagon( double x, double y, double h ) override;;
+        private:
+                /*
+                 * Virtual methods implemented by SVG renderer.
+                 */
+                void drawBegin( double w, double h ) override;;
+                void drawEnd( void ) override;;
+                void drawLine( double x, double y, double w, double h ) override;;
+                void drawBox( double x, double y, double w, double h ) override;;
+                void drawText( double x, double y, double size, const std::string& text, HAlign halign = H_ALIGN_CENTER ) override;;
+                void drawRing( double x, double y, double r, double w ) override;;
+                void drawHexagon( double x, double y, double h ) override;;
 
 
-	private:
-		/**
-		 * Private data for SVG Renderer
-		 */
-		struct PrivateData;
-		PrivateData *d;
-	};
+        private:
+                /**
+                 * Private data for SVG Renderer
+                 */
+                struct PrivateData;
+                PrivateData *d;
+        };
 
 }
 
