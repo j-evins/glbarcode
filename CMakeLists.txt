@@ -31,10 +31,8 @@ set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/"
 #
 # Optional dependencies on qrencode and qt libraries
 #
-find_package (LibQrencode 3.4 QUIET)
+find_package (LibQrencode 4.0 QUIET)
 find_package (Qt6 6.2 COMPONENTS Core Gui QUIET)
-
-
 
 #
 # Subdirectories
@@ -46,4 +44,33 @@ add_subdirectory (app)
 add_subdirectory (doc)
 add_subdirectory (test)
 add_subdirectory (test/capi)
+
+
+#
+# Print configuration information
+#
+message (STATUS "")
+message (STATUS "Project name ............ " ${Package_Name})
+message (STATUS "Project version ......... " ${Package_Version})
+message (STATUS "Host system ............. " ${CMAKE_HOST_SYSTEM} " " ${CMAKE_HOST_SYSTEM_PROCESSOR})
+message (STATUS "Target system ........... " ${CMAKE_SYSTEM} " " ${CMAKE_SYSTEM_PROCESSOR})
+message (STATUS "Installation prefix ..... " ${CMAKE_INSTALL_PREFIX})
+message (STATUS "Source code location .... " ${CMAKE_SOURCE_DIR})
+message (STATUS "CMake version ........... " ${CMAKE_VERSION})
+message (STATUS "C++ Compiler ............ " ${CMAKE_CXX_COMPILER_ID} " " ${CMAKE_CXX_COMPILER} " " ${CMAKE_CXX_COMPILER_VERSION})
+
+if (LIBQRENCODE_FOUND)
+  message (STATUS "qrencode (optional)...... " ${LIBQRENCODE_VERSION_STRING})
+else (LIBQRENCODE_FOUND)
+  message (STATUS "qrencode (optional)...... No.")
+endif (LIBQRENCODE_FOUND)
+
+if (Qt6_FOUND)
+  message (STATUS "Qt version .............. " ${Qt6Core_VERSION})
+else (Qt6_FOUND)
+  message (STATUS "Qt version .............. No.")
+endif (Qt6_FOUND)
+
+message (STATUS "")
+
 

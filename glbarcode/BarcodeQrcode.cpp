@@ -77,7 +77,6 @@ namespace glbarcode
 
 
                 QRcode_free( qrcode );
-                QRcode_clearCache();
 
                 return true;
         }

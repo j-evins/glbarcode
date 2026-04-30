@@ -60,19 +60,19 @@ set (LIB_SOURCES
 configure_file (Version.hpp.in ${CMAKE_CURRENT_BINARY_DIR}/Version.hpp @ONLY)
 
 
-if (${LIBQRENCODE_FOUND})
+if (LIBQRENCODE_FOUND)
   add_definitions (-DHAVE_QRENCODE=1)
   set (OPTIONAL_QRENCODE "QRENCODE::QRENCODE")
-else (${LIBQRENCODE_FOUND})
+else (LIBQRENCODE_FOUND)
   set (OPTIONAL_QRENCODE "")
-endif (${LIBQRENCODE_FOUND})
+endif (LIBQRENCODE_FOUND)
 
-if (${Qt6_FOUND})
+if (Qt6_FOUND)
   add_definitions (-DHAVE_QT=1)
   set (OPTIONAL_QT "Qt6::Gui")
-else (${Qt6_FOUND})
+else (Qt6_FOUND)
   set (OPTIONAL_QT "")
-endif (${Qt6_FOUND})
+endif (Qt6_FOUND)
 
 
 add_library (glbarcode++ STATIC
