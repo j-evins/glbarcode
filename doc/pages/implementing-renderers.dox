@@ -39,16 +39,13 @@ Example
 
 The following is a simple example of a renderer for a fictitious drawing library called "xxx":
 
-@code
-#include "Renderer.h"
+@code{.cpp}
+#include "Renderer.hpp"
  
 #include <cstdio>
 #include <xxx.h>
  
  
-/**
- * Xxx renderer implementation
- */
 class RendererXxx : public Renderer
 {
 public:
