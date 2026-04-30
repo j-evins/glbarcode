@@ -15,11 +15,12 @@ set (Package_Version "${API_Version}.${Feature_Version}.${Bugfix_Version}")
 set (Unique_Package_Name ${Package_Name}-${API_Version})
 set (Unique_CAPI_Package_Name ${Package_Name}-capi-${API_Version})
 
-set (CMAKE_CXX_FLAGS "-std=c++11 -g")
-set (CMAKE_C_FLAGS "-g")
-
 # Uncomment to build with pedantic flags
 #set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Wpedantic")
+
+
+# cache variables for installation destinations
+include(GNUInstallDirs)
 
 
 #
@@ -27,12 +28,13 @@ set (CMAKE_C_FLAGS "-g")
 #
 set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
-
 #
 # Optional dependencies on qrencode and qt libraries
 #
 find_package (LibQrencode 3.4 QUIET)
 find_package (Qt6 6.2 COMPONENTS Core Gui QUIET)
+
+
 
 #
 # Subdirectories

@@ -15,4 +15,4 @@ target_link_libraries (glbarcode
 )
 
 
-install (TARGETS glbarcode RUNTIME DESTINATION bin)
+install (TARGETS glbarcode RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})

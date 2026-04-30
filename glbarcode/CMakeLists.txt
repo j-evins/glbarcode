@@ -57,6 +57,8 @@ set (LIB_SOURCES
   RendererDebug.cpp
 )
 
+configure_file (Version.hpp.in ${CMAKE_CURRENT_BINARY_DIR}/Version.hpp @ONLY)
+
 
 if (${LIBQRENCODE_FOUND})
   add_definitions (-DHAVE_QRENCODE=1)
@@ -73,7 +75,7 @@ else (${Qt6_FOUND})
 endif (${Qt6_FOUND})
 
 
-add_library (glbarcode++ SHARED
+add_library (glbarcode++ STATIC
   ${LIB_SOURCES}
 )
 
@@ -83,7 +85,8 @@ target_compile_features (glbarcode++
 
 target_include_directories (glbarcode++
   PUBLIC
-    ..
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}..>"
+    "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
   PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}/..
 )
@@ -95,10 +98,9 @@ target_link_libraries (glbarcode++
 )
 
 
-configure_file (Version.hpp.in ${CMAKE_CURRENT_BINARY_DIR}/Version.hpp @ONLY)
 configure_file (${Unique_Package_Name}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${Unique_Package_Name}.pc @ONLY)
 
 
-install (TARGETS glbarcode++ LIBRARY DESTINATION lib)
-install (FILES ${PUBLIC_HEADERS} DESTINATION include/${Unique_Package_Name}/glbarcode)
-install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${Unique_Package_Name}.pc DESTINATION lib/pkgconfig)
+install (TARGETS glbarcode++ LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+install (FILES ${PUBLIC_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/glbarcode)
+install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${Unique_Package_Name}.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)

@@ -6,5 +6,5 @@ Name: @Unique_Package_Name@
 Description: C++ version of gLabels Barcode Generator Library
 Version: @Package_Version@
 Libs: -L${libdir} -lglbarcode++
-Cflags: -I${includedir}/@Unique_Package_Name@
+Cflags: -I${includedir}
 Requires: @Lib_Requires@
