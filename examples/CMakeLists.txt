@@ -12,7 +12,7 @@ add_executable(generate-samples
 )
 
 target_link_libraries(generate-samples
-  ${Lib_Name}
+  glbarcode++
 )
 
 
@@ -21,7 +21,7 @@ add_executable(usage-example-1
 )
 
 target_link_libraries(usage-example-1
-  ${Lib_Name}
+  glbarcode++
 )
 
 add_executable(mybarcode-example
@@ -30,6 +30,6 @@ add_executable(mybarcode-example
 )
 
 target_link_libraries(mybarcode-example
-  ${Lib_Name}
+  glbarcode++
 )
 

@@ -5,6 +5,6 @@ includedir=@CMAKE_INSTALL_PREFIX@/include
 Name: @Unique_CAPI_Package_Name@
 Description: C API to glbarcode++ Barcode Generator Library
 Version: @Package_Version@
-Libs: -L${libdir} -l@CAPI_Lib_Name@
+Libs: -L${libdir} -lglbarcode-capi
 Cflags: -I${includedir}/@Unique_Package_Name@
 Requires: @Unique_Package_Name@

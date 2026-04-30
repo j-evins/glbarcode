@@ -13,8 +13,7 @@ add_executable(capi-test-svg-renderer
 )
 
 target_link_libraries(capi-test-svg-renderer
-  ${CAPI_Lib_Name}
-  ${Lib_Name}
+  glbarcode-capi
 )
 
 
@@ -23,7 +22,6 @@ add_executable(capi-test-factory
 )
 
 target_link_libraries(capi-test-factory
-  ${CAPI_Lib_Name}
-  ${Lib_Name}
+  glbarcode-capi
 )
 

@@ -12,7 +12,7 @@ add_executable(test-debug-renderer
 )
 
 target_link_libraries(test-debug-renderer
-  ${Lib_Name}
+  glbarcode++
 )
 
 
@@ -21,7 +21,7 @@ add_executable(test-svg-renderer
 )
 
 target_link_libraries(test-svg-renderer
-  ${Lib_Name}
+  glbarcode++
 )
 
 
@@ -30,5 +30,5 @@ add_executable(test-datamatrix
 )
 
 target_link_libraries(test-datamatrix
-  ${Lib_Name}
+  glbarcode++
 )

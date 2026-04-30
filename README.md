@@ -35,7 +35,7 @@ and install:
 glbarcode++ License
 -------------------
 
-Copyright &copy; 2013 Jaye Evins <evins@snaught.com>
+Copyright &copy; 2013-2026 Jaye Evins <evins@snaught.com>
 
 glbarcode++ is free software: you can redistribute it and/or modify
 it under the terms of the

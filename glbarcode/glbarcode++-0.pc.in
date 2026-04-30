@@ -5,6 +5,6 @@ includedir=@CMAKE_INSTALL_PREFIX@/include
 Name: @Unique_Package_Name@
 Description: C++ version of gLabels Barcode Generator Library
 Version: @Package_Version@
-Libs: -L${libdir} -l@Lib_Name@
+Libs: -L${libdir} -lglbarcode++
 Cflags: -I${includedir}/@Unique_Package_Name@
 Requires: @Lib_Requires@

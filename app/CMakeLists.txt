@@ -11,7 +11,7 @@ add_executable (glbarcode
 )
 
 target_link_libraries (glbarcode
-  ${Lib_Name}
+  glbarcode++
 )
 
 

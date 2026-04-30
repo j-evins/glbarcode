@@ -22,20 +22,20 @@ set (LIB_SOURCES
   gbc_renderer_svg.cpp
 )
 
-add_library (${CAPI_Lib_Name} SHARED
+add_library (glbarcode-capi SHARED
   ${LIB_SOURCES}
 )
 
-target_include_directories (${CAPI_Lib_Name}
+target_include_directories (glbarcode-capi
   PUBLIC
     ..
   PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}/..
 )
 
-target_link_libraries (${CAPI_Lib_Name}
+target_link_libraries (glbarcode-capi
   PRIVATE
-    ${Lib_Name}
+    glbarcode++
     ${OPTIONAL_QRENCODE}
     ${OPTIONAL_QT}
 )
@@ -44,6 +44,6 @@ target_link_libraries (${CAPI_Lib_Name}
 configure_file (gbc_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/gbc_version.h @ONLY)
 configure_file (${Unique_CAPI_Package_Name}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc @ONLY)
 
-install (TARGETS ${CAPI_Lib_Name} LIBRARY DESTINATION lib)
+install (TARGETS glbarcode-capi LIBRARY DESTINATION lib)
 install (FILES ${PUBLIC_HEADERS} DESTINATION include/${Unique_Package_Name}/glbarcode/capi)
 install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc DESTINATION lib/pkgconfig)

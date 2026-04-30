@@ -4,21 +4,16 @@ project (glbarcodepp)
 
 
 set (Package_Name "glbarcode++")
-set (Short_Name   "gbc")
 set (Package_URL  "https://github.com/j-evins/glbarcode")
 
 set (API_Version     "0")
-set (Feature_Version "0")
+set (Feature_Version "1")
 set (Bugfix_Version  "0")
 
 set (Package_Version "${API_Version}.${Feature_Version}.${Bugfix_Version}")
 
 set (Unique_Package_Name ${Package_Name}-${API_Version})
 set (Unique_CAPI_Package_Name ${Package_Name}-capi-${API_Version})
-
-set (Lib_Name ${Short_Name}-${API_Version})
-set (CAPI_Lib_Name ${Short_Name}-capi-${API_Version})
-
 
 set (CMAKE_CXX_FLAGS "-std=c++11 -g")
 set (CMAKE_C_FLAGS "-g")
@@ -32,28 +27,12 @@ set (CMAKE_C_FLAGS "-g")
 #
 set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 
+
 #
-# Optional dependency on qrencode library
+# Optional dependencies on qrencode and qt libraries
 #
 find_package (LibQrencode 3.4 QUIET)
-if (${LIBQRENCODE_FOUND})
-  add_definitions (-DHAVE_QRENCODE=1)
-  set (OPTIONAL_QRENCODE "QRENCODE::QRENCODE")
-else (${LIBQRENCODE_FOUND})
-  set (OPTIONAL_QRENCODE "")
-endif (${LIBQRENCODE_FOUND})
-
-
-#
-# Optional dependency on qt
-#
 find_package (Qt6 6.2 COMPONENTS Core Gui QUIET)
-if (${Qt6_FOUND})
-  add_definitions (-DHAVE_QT=1)
-  set (OPTIONAL_QT "Qt6::Gui")
-else (${Qt6_FOUND})
-  set (OPTIONAL_QT "")
-endif (${Qt6_FOUND})
 
 #
 # Subdirectories
