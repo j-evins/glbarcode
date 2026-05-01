@@ -56,9 +56,9 @@ For example:
 @code{.cpp}
 glbarcode::TypeIdList typeIds = glbarcode::Factory::getSupportedTypes();
  	
-for ( glbarcode::TypeIdList::iterator iter = typeIds.begin(); iter != typeIds.end(); iter++ )
+for ( auto& id : typeIds )
 {
-    std::cerr << *iter << std::endl;
+    std::cerr << id << std::endl;
 }
 @endcode
 
