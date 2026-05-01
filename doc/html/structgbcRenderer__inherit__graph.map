@@ -1,6 +1,13 @@
 <map id="gbcRenderer" name="gbcRenderer">
-<area shape="rect" id="node2" href="$classglbarcode_1_1Renderer.html" title="{glbarcode::Renderer\n||+ ~Renderer()\l+ render()\l# drawBegin()\l# drawEnd()\l# drawLine()\l# drawBox()\l# drawText()\l# drawRing()\l# drawHexagon()\l}" alt="" coords="219,131,357,325"/>
-<area shape="rect" id="node3" href="$classglbarcode_1_1RendererDebug.html" title="{glbarcode::RendererDebug\n||}" alt="" coords="5,417,181,495"/>
-<area shape="rect" id="node4" href="$classglbarcode_1_1RendererEps.html" title="{glbarcode::RendererEps\n||+ RendererEps()\l+ RendererEps()\l+ RendererEps()\l+ ~RendererEps()\l+ operator=()\l+ filename()\l+ setFilename()\l}" alt="" coords="207,373,369,539"/>
-<area shape="rect" id="node5" href="$classglbarcode_1_1RendererSvg.html" title="{glbarcode::RendererSvg\n||+ RendererSvg()\l+ RendererSvg()\l+ RendererSvg()\l+ ~RendererSvg()\l+ operator=()\l+ filename()\l+ setFilename()\l}" alt="" coords="393,373,556,539"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,109,105"/>
+<area shape="rect" id="Node000002" href="$classglbarcode_1_1Renderer.html" title=" " alt="" coords="157,80,311,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,90,157,90,157,95,123,95"/>
+<area shape="rect" id="Node000003" href="$classglbarcode_1_1QtRenderer.html" title=" " alt="" coords="372,5,540,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,72,358,39,397,28,399,33,360,45,277,77"/>
+<area shape="rect" id="Node000004" href="$classglbarcode_1_1RendererDebug.html" title=" " alt="" coords="359,55,553,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="324,80,358,76,359,81,325,85"/>
+<area shape="rect" id="Node000005" href="$classglbarcode_1_1RendererEps.html" title=" " alt="" coords="368,104,544,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,100,368,105,367,110,324,105"/>
+<area shape="rect" id="Node000006" href="$classglbarcode_1_1RendererSvg.html" title=" " alt="" coords="367,153,545,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="279,108,360,138,403,151,401,156,358,143,277,113"/>
 </map>

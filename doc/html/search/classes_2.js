@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gbcbarcode',['gbcBarcode',['../structgbcBarcode.html',1,'']]],
-  ['gbcfactory',['gbcFactory',['../structgbcFactory.html',1,'']]],
-  ['gbcrenderer',['gbcRenderer',['../structgbcRenderer.html',1,'']]]
+  ['gbcbarcode_0',['gbcBarcode',['../structgbcBarcode.html',1,'']]],
+  ['gbcrenderer_1',['gbcRenderer',['../structgbcRenderer.html',1,'']]]
 ];

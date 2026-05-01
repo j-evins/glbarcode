@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nx',['nx',['../classglbarcode_1_1Matrix.html#aa9a302b42d94ab0202bb1a8ad7d8f376',1,'glbarcode::Matrix']]],
-  ['ny',['ny',['../classglbarcode_1_1Matrix.html#aef2249ced77036e64064e84b1a84081d',1,'glbarcode::Matrix']]]
+  ['nx_0',['nx',['../classglbarcode_1_1Matrix.html#a3e342ade59b074cf90d14d94d239d78d',1,'glbarcode::Matrix']]],
+  ['ny_1',['ny',['../classglbarcode_1_1Matrix.html#ae7bbe469ffef091c096ccad82e607849',1,'glbarcode::Matrix']]]
 ];

@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['operator_3d',['operator=',['../classglbarcode_1_1RendererEps.html#a7c80ead82ebd023e9e245034b40c5352',1,'glbarcode::RendererEps::operator=()'],['../classglbarcode_1_1RendererSvg.html#a6706148ab5685964b741aaf0fc4a035c',1,'glbarcode::RendererSvg::operator=()']]],
-  ['operator_5b_5d',['operator[]',['../classglbarcode_1_1Matrix.html#a2e420e5d81b7fd36b06db3fc0af06a3c',1,'glbarcode::Matrix::operator[](int i)'],['../classglbarcode_1_1Matrix.html#a084e33fbbebd78a1ffa7f6188823922a',1,'glbarcode::Matrix::operator[](int i) const ']]]
+  ['mainpage_2edox_0',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
+  ['matrix_1',['matrix',['../classglbarcode_1_1Matrix.html',1,'glbarcode::Matrix&lt; T &gt;'],['../classglbarcode_1_1Matrix.html#a6323a656626f3b9a12549a5d15a84998',1,'glbarcode::Matrix::Matrix()'],['../classglbarcode_1_1Matrix.html#ac9785e47167fcf4bff0e4f9fe3487796',1,'glbarcode::Matrix::Matrix(int nx, int ny)'],['../classglbarcode_1_1Matrix.html#a1d89800be67c09e11c4284e4db87c7bf',1,'glbarcode::Matrix::Matrix(const Matrix&lt; T &gt; &amp;src)'],['../classglbarcode_1_1Matrix.html#afb7d60a4447f0c2b0b7f77b4d2238422',1,'glbarcode::Matrix::Matrix(const Matrix&lt; T &gt; &amp;src, int x0, int y0, int nx, int ny)']]],
+  ['matrix_2ehpp_2',['Matrix.hpp',['../Matrix_8hpp.html',1,'']]],
+  ['mendbarsmodules_3',['mEndBarsModules',['../classglbarcode_1_1BarcodeUpcBase.html#a24e4f882330935f8b9cfb232679f5ec1',1,'glbarcode::BarcodeUpcBase']]],
+  ['methods_4',['methods',['../impl_1d_barcodes.html#autotoc_md9',1,'Virtual Methods'],['../impl_2d_barcodes.html#autotoc_md12',1,'Virtual Methods']]],
+  ['mfirstdigitval_5',['mFirstDigitVal',['../classglbarcode_1_1BarcodeUpcBase.html#ae8ae6af3868af09f84a8b798c9bb82c4',1,'glbarcode::BarcodeUpcBase']]]
 ];

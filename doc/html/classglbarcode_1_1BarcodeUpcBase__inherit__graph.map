@@ -1,7 +1,13 @@
 <map id="glbarcode::BarcodeUpcBase" name="glbarcode::BarcodeUpcBase">
-<area shape="rect" id="node5" href="$classglbarcode_1_1BarcodeEan13.html" title="{glbarcode::BarcodeEan13\n||+ BarcodeEan13()\l+ create()\l}" alt="" coords="5,950,176,1042"/>
-<area shape="rect" id="node6" href="$classglbarcode_1_1BarcodeUpcA.html" title="{glbarcode::BarcodeUpcA\n||+ BarcodeUpcA()\l+ create()\l}" alt="" coords="201,950,367,1042"/>
-<area shape="rect" id="node2" href="$classglbarcode_1_1Barcode1dBase.html" title="{glbarcode::Barcode1dBase\n||+ ~Barcode1dBase()\l+ build()\l# Barcode1dBase()\l# validate()\l# preprocess()\l# encode()\l# prepareText()\l# vectorize()\l}" alt="" coords="97,566,276,746"/>
-<area shape="rect" id="node3" href="$classglbarcode_1_1Barcode.html" title="{glbarcode::Barcode\n||+ ~Barcode()\l+ setShowText()\l+ showText()\l+ setChecksum()\l+ checksum()\l+ build()\l+ render()\l+ isEmpty()\l+ isDataValid()\l+ width()\l+ height()\l# Barcode()\l# clear()\l# addLine()\l# addBox()\l# addText()\l# addRing()\l# addHexagon()\l# setIsEmpty()\l# setIsDataValid()\l# setWidth()\l# setHeight()\l}" alt="" coords="119,131,253,517"/>
-<area shape="rect" id="node4" href="$structgbcBarcode.html" title="{gbcBarcode\n||}" alt="" coords="141,5,232,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,225,305,251"/>
+<area shape="rect" id="Node000005" href="$classglbarcode_1_1BarcodeEan13.html" title=" " alt="" coords="5,299,192,324"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="176,261,117,301,114,296,173,256"/>
+<area shape="rect" id="Node000006" href="$classglbarcode_1_1BarcodeUpcA.html" title=" " alt="" coords="216,299,397,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="232,256,291,296,288,301,229,261"/>
+<area shape="rect" id="Node000002" href="$classglbarcode_1_1Barcode1dBase.html" title=" " alt="" coords="105,152,300,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,191,205,225,200,225,200,191"/>
+<area shape="rect" id="Node000003" href="$classglbarcode_1_1Barcode.html" title=" " alt="" coords="129,79,276,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,118,205,152,200,152,200,118"/>
+<area shape="rect" id="Node000004" href="$structgbcBarcode.html" title=" " alt="" coords="153,5,252,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="205,44,205,79,200,79,200,44"/>
 </map>

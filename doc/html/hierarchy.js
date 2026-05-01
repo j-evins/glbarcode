@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "glbarcode::Factory", "classglbarcode_1_1Factory.html", null ],
     [ "gbcBarcode", "structgbcBarcode.html", [
       [ "glbarcode::Barcode", "classglbarcode_1_1Barcode.html", [
         [ "glbarcode::Barcode1dBase", "classglbarcode_1_1Barcode1dBase.html", [
@@ -24,11 +25,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "gbcFactory", "structgbcFactory.html", [
-      [ "glbarcode::Factory", "classglbarcode_1_1Factory.html", null ]
-    ] ],
     [ "gbcRenderer", "structgbcRenderer.html", [
       [ "glbarcode::Renderer", "classglbarcode_1_1Renderer.html", [
+        [ "glbarcode::QtRenderer", "classglbarcode_1_1QtRenderer.html", null ],
         [ "glbarcode::RendererDebug", "classglbarcode_1_1RendererDebug.html", null ],
         [ "glbarcode::RendererEps", "classglbarcode_1_1RendererEps.html", null ],
         [ "glbarcode::RendererSvg", "classglbarcode_1_1RendererSvg.html", null ]

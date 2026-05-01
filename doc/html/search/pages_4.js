@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usage',['Usage',['../usage.html',1,'']]]
+  ['extending_0',['Extending',['../extending.html',1,'']]]
 ];

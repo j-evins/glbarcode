@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factory',['Factory',['../classglbarcode_1_1Factory.html',1,'glbarcode']]]
+  ['factory_0',['Factory',['../classglbarcode_1_1Factory.html',1,'glbarcode']]]
 ];

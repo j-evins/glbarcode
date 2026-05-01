@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gnu_20lesser_20general_20public_20license',['GNU Lesser General Public License',['../lgpl.html',1,'']]]
+  ['barcodes_0',['barcodes',['../impl_1d_barcodes.html',1,'Implementing 1D Barcodes'],['../impl_2d_barcodes.html',1,'Implementing 2D Barcodes']]]
 ];

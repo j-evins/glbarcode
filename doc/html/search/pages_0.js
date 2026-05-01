@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['drawing_20primitives',['Drawing Primitives',['../drawing_primitives.html',1,'extending']]]
+  ['1d_20barcodes_0',['Implementing 1D Barcodes',['../impl_1d_barcodes.html',1,'extending']]]
 ];

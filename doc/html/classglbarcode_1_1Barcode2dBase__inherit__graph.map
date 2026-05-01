@@ -1,6 +1,11 @@
 <map id="glbarcode::Barcode2dBase" name="glbarcode::Barcode2dBase">
-<area shape="rect" id="node4" href="$classglbarcode_1_1BarcodeDataMatrix.html" title="{glbarcode::BarcodeDataMatrix\n||+ create()\l}" alt="" coords="5,779,203,856"/>
-<area shape="rect" id="node5" href="$classglbarcode_1_1BarcodeQrcode.html" title="{glbarcode::BarcodeQrcode\n||+ create()\l}" alt="" coords="228,779,404,856"/>
-<area shape="rect" id="node2" href="$classglbarcode_1_1Barcode.html" title="{glbarcode::Barcode\n||+ ~Barcode()\l+ setShowText()\l+ showText()\l+ setChecksum()\l+ checksum()\l+ build()\l+ render()\l+ isEmpty()\l+ isDataValid()\l+ width()\l+ height()\l# Barcode()\l# clear()\l# addLine()\l# addBox()\l# addText()\l# addRing()\l# addHexagon()\l# setIsEmpty()\l# setIsDataValid()\l# setWidth()\l# setHeight()\l}" alt="" coords="142,131,276,517"/>
-<area shape="rect" id="node3" href="$structgbcBarcode.html" title="{gbcBarcode\n||}" alt="" coords="164,5,255,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,152,327,177"/>
+<area shape="rect" id="Node000004" href="$classglbarcode_1_1BarcodeDataMatrix.html" title=" " alt="" coords="5,225,225,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,187,135,227,133,223,199,182"/>
+<area shape="rect" id="Node000005" href="$classglbarcode_1_1BarcodeQrcode.html" title=" " alt="" coords="249,225,443,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,182,328,223,326,227,259,187"/>
+<area shape="rect" id="Node000002" href="$classglbarcode_1_1Barcode.html" title=" " alt="" coords="157,79,303,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,118,233,152,227,152,227,118"/>
+<area shape="rect" id="Node000003" href="$structgbcBarcode.html" title=" " alt="" coords="181,5,279,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,44,233,79,227,79,227,44"/>
 </map>

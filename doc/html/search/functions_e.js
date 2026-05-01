@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['setchecksum',['setChecksum',['../classglbarcode_1_1Barcode.html#a87207581be155a1873899bb6c38897ff',1,'glbarcode::Barcode']]],
-  ['setfilename',['setFilename',['../classglbarcode_1_1RendererEps.html#a3c322bd53f8b521039780f770e15c904',1,'glbarcode::RendererEps::setFilename()'],['../classglbarcode_1_1RendererSvg.html#a30f2476d6f1397f6162dd7be5a376058',1,'glbarcode::RendererSvg::setFilename()']]],
-  ['setheight',['setHeight',['../classglbarcode_1_1Barcode.html#a1bb778ce98921c89183f2d0421873367',1,'glbarcode::Barcode']]],
-  ['setisdatavalid',['setIsDataValid',['../classglbarcode_1_1Barcode.html#a3ae0b4da469aaebe8b987874d08fd7e6',1,'glbarcode::Barcode']]],
-  ['setisempty',['setIsEmpty',['../classglbarcode_1_1Barcode.html#a448fe4cf8baa5cb34904392769198a50',1,'glbarcode::Barcode']]],
-  ['setshowtext',['setShowText',['../classglbarcode_1_1Barcode.html#a10f90e14d57f6c019c79572102ee79ec',1,'glbarcode::Barcode']]],
-  ['setsubmatrix',['setSubMatrix',['../classglbarcode_1_1Matrix.html#ab5c1e87827729d884060c5bd7008ed81',1,'glbarcode::Matrix']]],
-  ['setwidth',['setWidth',['../classglbarcode_1_1Barcode.html#af9f0cb08b8326d79566f7c544d27895b',1,'glbarcode::Barcode']]],
-  ['showtext',['showText',['../classglbarcode_1_1Barcode.html#a05c686b670fb352e7716320bd423150e',1,'glbarcode::Barcode']]],
-  ['submatrix',['subMatrix',['../classglbarcode_1_1Matrix.html#ac426e99951751ee21ee806f48ee9d941',1,'glbarcode::Matrix']]]
+  ['registertype_0',['registerType',['../classglbarcode_1_1Factory.html#a17a0dc24fed9af1924fe7e4b59ee651b',1,'glbarcode::Factory']]],
+  ['render_1',['render',['../classglbarcode_1_1Barcode.html#ac1a770020b4915e4d324dd18af3a06f5',1,'glbarcode::Barcode::render()'],['../classglbarcode_1_1Renderer.html#a0ce521ad09461d4723c1aee271d81c9e',1,'glbarcode::Renderer::render(double w, double h, const std::list&lt; DrawingPrimitive * &gt; &amp;primitives)']]],
+  ['renderer_2',['renderer',['../classglbarcode_1_1Renderer.html#a72a1960a4fc945fb07390dc08ff976ec',1,'glbarcode::Renderer::Renderer()=default'],['../classglbarcode_1_1Renderer.html#a813de31233db410484a478979e1dc2c7',1,'glbarcode::Renderer::Renderer(const Renderer &amp;)=delete']]],
+  ['renderereps_3',['renderereps',['../classglbarcode_1_1RendererEps.html#a650e150d018766a05b180db963124708',1,'glbarcode::RendererEps::RendererEps()'],['../classglbarcode_1_1RendererEps.html#a67897254a81c8f28c2178ca7acdf70b4',1,'glbarcode::RendererEps::RendererEps(const std::string &amp;filename)'],['../classglbarcode_1_1RendererEps.html#af49b45a8cee0f679ca554396ec65fdd6',1,'glbarcode::RendererEps::RendererEps(const RendererEps &amp;from)']]],
+  ['renderersvg_4',['renderersvg',['../classglbarcode_1_1RendererSvg.html#aaa7996e8bc059d117c3452f25b39e57a',1,'glbarcode::RendererSvg::RendererSvg()'],['../classglbarcode_1_1RendererSvg.html#a4a07890930e3edcb3fb940a967855cc9',1,'glbarcode::RendererSvg::RendererSvg(const std::string &amp;filename)'],['../classglbarcode_1_1RendererSvg.html#a2b929d286fcedca480373a6c94be3d58',1,'glbarcode::RendererSvg::RendererSvg(const RendererSvg &amp;from)']]],
+  ['resize_5',['resize',['../classglbarcode_1_1Matrix.html#ad6b17eb9f23defbb680b77ee3ee5437c',1,'glbarcode::Matrix']]]
 ];
