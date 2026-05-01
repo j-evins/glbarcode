@@ -103,15 +103,15 @@ Full Example
 
 As a complete example, the following is the glbarcode++ implementation of a custom barcode type called "mybarcode".
 
-MyBarcode.h:
+MyBarcode.hpp:
 @code{.cpp}
-/*  MyBarcode.h */
+/*  MyBarcode.hpp */
     
-#ifndef _MyBarcode_h_
-#define _MyBarcode_h_
+#ifndef _MyBarcode_hpp_
+#define _MyBarcode_hpp_
 	
 	
-#include "glbarcode/Barcode1dBase.h"
+#include "glbarcode/Barcode1dBase.hpp"
 	 
 	 
 class MyBarcode : public glbarcode::Barcode1dBase
@@ -143,9 +143,9 @@ MyBarcode.cpp:
 @code{.cpp}
 /*  MyBarcode.cpp */
     
-#include "MyBarcode.h"
+#include "MyBarcode.hpp"
 	 
-#include "glbarcode/Constants.h"
+#include "glbarcode/Constants.hpp"
 	 
 #include <cctype>
 #include <algorithm>

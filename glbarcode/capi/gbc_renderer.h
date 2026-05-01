@@ -1,6 +1,6 @@
 /*  gbc_renderer.h
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -33,16 +33,16 @@ extern "C" {
 #endif
 
 
-	/**
-	 * CAPI Base class for all renderers.
-	 */
-	typedef struct gbcRenderer gbcRenderer;
-	
+        /**
+         * CAPI Base class for all renderers.
+         */
+        typedef struct gbcRenderer gbcRenderer;
 
-	/**
-	 * Delete gbcRenderer object.
-	 */
-	void gbc_renderer_delete( gbcRenderer *bc );
+
+        /**
+         * Delete gbcRenderer object.
+         */
+        void gbc_renderer_delete( gbcRenderer *bc );
 
 
 

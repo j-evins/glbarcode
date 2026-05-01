@@ -1,6 +1,6 @@
 /*  test-debug-renderer.cpp
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -18,8 +18,9 @@
  *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "glbarcode/Factory.h"
-#include "glbarcode/RendererDebug.h"
+
+#include "glbarcode/Factory.hpp"
+#include "glbarcode/RendererDebug.hpp"
 
 #include <iostream>
 #include <string>
@@ -27,20 +28,20 @@
 
 int main( int argc, char **argv )
 {
-	glbarcode::RendererDebug renderer;
+        glbarcode::RendererDebug renderer;
 
-	if ( argc != 2 )
-	{
-		std::cerr << "Usage: " << argv[0] << "data";
-	}
+        if ( argc != 2 )
+        {
+                std::cerr << "Usage: " << argv[0] << "data";
+        }
 
-	glbarcode::Factory::init();
+        glbarcode::Factory::init();
 
-	glbarcode::Barcode* bc = glbarcode::Factory::createBarcode( "code39" );
+        glbarcode::Barcode* bc = glbarcode::Factory::createBarcode( "code39" );
 
-	bc->build( argv[1] );
+        bc->build( argv[1] );
 
-	bc->render( renderer );
+        bc->render( renderer );
 
-	delete bc;
+        delete bc;
 }

@@ -1,6 +1,6 @@
 /*  gbc_factory.cpp
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -18,9 +18,10 @@
  *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #include "gbc_factory.h"
 
-#include <glbarcode/Factory.h>
+#include <glbarcode/Factory.hpp>
 
 #include <string>
 #include <string.h>
@@ -33,46 +34,46 @@ using namespace glbarcode;
 
 void gbc_factory_init( void )
 {
-	Factory::init();
+        Factory::init();
 }
 
 
 gbcBarcode *gbc_factory_create_barcode( char *type_id )
 {
-	return Factory::createBarcode( type_id );
+        return Factory::createBarcode( type_id );
 }
 
 
 bool gbc_factory_is_type_supported( char *type_id )
 {
-	return Factory::isTypeSupported( type_id );
+        return Factory::isTypeSupported( type_id );
 }
 
 
 char ** gbc_factory_get_supported_types( void )
 {
-	TypeIdList supported_types = Factory::getSupportedTypes();
-	int n = supported_types.size();
+        TypeIdList supported_types = Factory::getSupportedTypes();
+        int n = supported_types.size();
 
-	char **list = new char*[ n + 1 ];
+        char **list = new char*[ n + 1 ];
 
-	TypeIdList::iterator iTypeId = supported_types.begin();
-	for ( int i = 0; i < n; i++ )
-	{
-		list[i] = strdup( iTypeId->c_str() );
-		iTypeId++;
-	}
-	list[n] = NULL;
+        TypeIdList::iterator iTypeId = supported_types.begin();
+        for ( int i = 0; i < n; i++ )
+        {
+                list[i] = strdup( iTypeId->c_str() );
+                iTypeId++;
+        }
+        list[n] = NULL;
 
-	return list;
+        return list;
 }
 
 
 void gbc_factory_free_supported_types( char **list )
 {
-	for ( int i = 0; list[i] != NULL; i++ )
-	{
-		free( list[i] ); /* use free() since allocated w/ strdup() */
-	}
-	delete[] list;
+        for ( int i = 0; list[i] != NULL; i++ )
+        {
+                free( list[i] ); /* use free() since allocated w/ strdup() */
+        }
+        delete[] list;
 }

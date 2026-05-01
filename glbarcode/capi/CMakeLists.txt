@@ -22,13 +22,33 @@ set (LIB_SOURCES
   gbc_renderer_svg.cpp
 )
 
-add_library (${CAPI_Lib_Name} SHARED
+configure_file (gbc_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/gbc_version.h @ONLY)
+
+
+add_library (glbarcode-capi STATIC
   ${LIB_SOURCES}
 )
 
-configure_file (gbc_version.h.in ${CMAKE_CURRENT_BINARY_DIR}/gbc_version.h @ONLY)
+target_compile_features (glbarcode++
+  PRIVATE cxx_std_20
+)
+
+target_include_directories (glbarcode-capi
+  PUBLIC
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}..>"
+    "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
+  PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}/..
+)
+
+target_link_libraries (glbarcode-capi
+  PRIVATE
+    glbarcode++
+)
+
+
 configure_file (${Unique_CAPI_Package_Name}.pc.in ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc @ONLY)
 
-install (TARGETS ${CAPI_Lib_Name} LIBRARY DESTINATION lib)
-install (FILES ${PUBLIC_HEADERS} DESTINATION include/${Unique_Package_Name}/glbarcode/capi)
-install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc DESTINATION lib/pkgconfig)
+install (TARGETS glbarcode-capi LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+install (FILES ${PUBLIC_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/glbarcode/capi)
+install (FILES ${CMAKE_CURRENT_BINARY_DIR}/${Unique_CAPI_Package_Name}.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)

@@ -1,6 +1,6 @@
 /*  capi-test-svg-renderer.c
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -17,6 +17,7 @@
  *  You should have received a copy of the GNU Lesser General Public License
  *  along with glbarcode++.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 
 #include "glbarcode/capi/gbc_factory.h"
 #include "glbarcode/capi/gbc_renderer_svg.h"

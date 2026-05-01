@@ -1,6 +1,6 @@
 /*  gbc_renderer_debug.h
  *
- *  Copyright (C) 2013  Jim Evins <evins@snaught.com>
+ *  Copyright (C) 2013  Jaye Evins <evins@snaught.com>
  *
  *  This file is part of glbarcode++.
  *
@@ -36,16 +36,16 @@ extern "C" {
 #endif
 
 
-	/**
-	 * CAPI stand-in for glbarcode::RendererDebug.
-	 */
-	typedef struct gbcRenderer gbcRendererDebug;
+        /**
+         * CAPI stand-in for glbarcode::RendererDebug.
+         */
+        typedef struct gbcRenderer gbcRendererDebug;
 
 
-	/**
-	 * New RendererDebug object.
-	 */
-	gbcRendererDebug* gbc_renderer_debug_new( void );
+        /**
+         * New RendererDebug object.
+         */
+        gbcRendererDebug* gbc_renderer_debug_new( void );
 
 
 
